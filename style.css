@@ -1,0 +1,22 @@
+body {
+    text-align: center;
+    font-family: Arial;
+    background: #f9f9f9;
+    padding: 10px;
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+  }
+  #map {
+    height: 500px;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+  
