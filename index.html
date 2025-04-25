@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head >
+
+  
+
   <meta charset="UTF-8">
-  <title>Free Voice Navigation</title>
+  <title >Voice enabled navigation system</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </head>
 <body>
-  <h1>🗣️ Free Voice Navigation System</h1>
-  <button onclick="startListening()">🎤 Speak Destination</button>
-  <p id="destinationOutput"></p>
+  <h1 style="color: red;">Voice navigation</h1>
+  <p style="color: azure;">
+🔊 Voice-Enabled Navigation Website:
+    
+This is a simple web-based navigation system that uses "voice input" to get both the "starting point" and "destination". 
+It displays the route on a map using "OpenStreetMap" and "OpenRouteService", and gives voice feedback using the browser's built-in speech tools.
+   </p>
+  <button onclick="startListening()" style="color: black;"">Start To Navigate</button>
+  <p style="color: beige;" id="destinationOutput"></p>
   <div id="map"></div>
   <script src="script.js"></script>
 </body>
