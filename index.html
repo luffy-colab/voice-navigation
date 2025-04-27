@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head >
-
-  
-
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <meta charset="UTF-8">
-  <title >Voice enabled navigation system</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Voice Navigation</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1 style="color: red;">Voice navigation</h1>
-  <p style="color: azure;">
-🔊 Voice-Enabled Navigation Website:
-    
-This is a simple web-based navigation system that uses "voice input" to get both the "starting point" and "destination". 
-It displays the route on a map using "OpenStreetMap" and "OpenRouteService", and gives voice feedback using the browser's built-in speech tools.
-   </p>
-  <button onclick="startListening()" style="color: black;"">Start To Navigate</button>
-  <p style="color: beige;" id="destinationOutput"></p>
-  <div id="map"></div>
+  <div class="container">
+    <h1>🗣️ Free Voice Navigation System</h1>
+    <button id="listenButton" onclick="startListening()">🎤 Speak Destination</button>
+    <div class="spinner" id="spinner"></div>
+    <p id="destinationOutput"></p>
+    <div id="map"></div>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
